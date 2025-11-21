@@ -1,0 +1,154 @@
+/* ************* index.html CSS ************ */
+
+
+header {
+  padding: 1em;
+  background-color: var(--clr-primary-400);
+  width: 100%;
+  margin-top: var(--s0);
+  border: solid 2px var(--clr-accent-300);
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px var(--clr-accent-300);
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+main {
+  padding-bottom: 2.5rem;
+  /* Footer height */
+}
+
+footer {
+  margin-top: auto;
+  width: 100%;
+  height: 7.5rem;
+  /* Footer height */
+  background-color: var(--clr-primary-400);
+  padding-top: 1em;
+  margin-bottom: var(--s0);
+  border: solid 2px var(--clr-accent-300);
+  border-radius: 20px;
+
+}
+/* add copyright to all post footers including template */
+.copyright {
+  font-size: var(--s0);
+  font-style:oblique;
+}
+
+section {
+  border: solid 2px var(--clr-accent-300);
+  border-radius: 10px;
+  margin: 1em;
+
+}
+
+.post-card {
+  display: flex;
+  padding: 2em;
+
+}
+/* add shaddow to images on index and posts -  */
+/* replace thumbnail class with image-shaddow in index.html */
+/* replace style tag on img with this class */
+
+.image-shaddow{
+ border-radius:20px; 
+ margin:auto; 
+ box-shadow: 7.5px 7.5px 7.5px black;
+}
+/* 
+.thumbnail {
+  padding: 1em;
+} */
+
+.post-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* give some space to the left of sub-title on index page */
+/* add this class to <h3> of "Post Sub Title text */
+.subtitle{
+  margin-left: 1em;
+}
+
+button {
+  border: solid 2px var(--clr-primary-500);
+  
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight:bold;
+  margin: 4px 2px;
+  cursor: pointer;
+  
+  background-color: var(--clr-primary-400);
+  
+  /* add shodow to all buttons */
+  box-shadow: 5px 5px 5px var(--clr-neutral-900);
+
+  color: var(--clr-primary-500);
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1em;
+
+}
+
+/*  add visual effect to active button */
+button:hover {
+  background-color: var(--clr-accent-200);
+  color: var(--clr-neutral-100);
+  font-size:18px;
+}
+
+/* *************** Post CSS ********************* */
+.post-wrapper {
+  max-width: 80%;
+  margin: auto;
+  margin-top: var(--s0);
+
+}
+
+.post-title {
+  text-align: center;
+  background-color: var(--clr-accent-300);
+  border: solid 2px var(--clr-primary-400);
+  box-shadow: 5px 5px 5px var(--clr-neutral-900);
+  border-radius: 15px;
+}
+
+.post-sub-title {
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 0.25em 1em;
+  color: var(--clr-neutral-900);
+  background-color: var(--clr-accent-100);
+  border: solid 2px var(--clr-neutral-900);
+  box-shadow: 5px 5px 5px var(--clr-neutral-900);
+  border-radius: 10px;
+}
+
+.post-image {
+  display: block;
+  margin: auto;
+  padding: 2em;
+  border-radius: 20px;
+  border: solid 2px var(--clr-primary-400);
+  margin-bottom: 1em;
+}
+
+.image-caption {
+  font-family: 'Roboto', sans-serif;
+  color: var(--clr-neutral-900);
+  font-size: var(--s1);
+  padding-top: 1em;
+}
