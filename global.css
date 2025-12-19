@@ -79,43 +79,44 @@ select {
 /*     End Andy Bell's Reset !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 :root {
-	/* Modular Scale - Every Layout */
-	--ratio: 1.5;
-	--s0: 0.85rem;
-	--s-1: calc(var(--s0) / var(--ratio)); /* 10.7px */
-	--s-2: calc(var(--s-1) / var(--ratio)); /* 7.1px  */
-	--s-3: calc(var(--s-2) / var(--ratio)); /* 4.75px */
-	--s-4: calc(var(--s-3) / var(--ratio)); /* 3.2px */
-	--s-5: calc(var(--s-4) / var(--ratio)); /* 2.1px */
-	--s-6: calc(var(--s-5) / var(--ratio)); /* 1.4px */
-	--s-7: calc(var(--s-6) / var(--ratio)); /* 1px */
-	--s1: calc(var(--s0) * var(--ratio)); /* 24px  */
-	--s2: calc(var(--s1) * var(--ratio)); /* 36px */
-	--s3: calc(var(--s2) * var(--ratio)); /* 54px */
-	--s4: calc(var(--s3) * var(--ratio)); /* 81px  */
-	--s5: calc(var(--s4) * var(--ratio)); /* 121px */
+  /* Modular Scale - Every Layout */
+  --ratio: 1.618;
+  --s0: 0.8rem; /* 13px */
+  /* increasing */
+  --s1: calc(var(--s0) * var(--ratio)); /* 15px  */
+  --s2: calc(var(--s1) * var(--ratio)); /* 24px */
+  --s3: calc(var(--s2) * var(--ratio)); /* 39px */
+  --s4: calc(var(--s3) * var(--ratio)); /* 64px  */
+  --s5: calc(var(--s4) * var(--ratio)); /* 104px */
+  --s6: calc(var(--s5) * var(--ratio)); /* 168px */
+  /* decreasing */
+  --s-1: calc(var(--s0) / var(--ratio)); /* 8px */
+  --s-2: calc(var(--s-1) / var(--ratio)); /* 5px  */
+  --s-3: calc(var(--s-2) / var(--ratio)); /* 3px */
+  --s-4: calc(var(--s-3) / var(--ratio)); /* 2px */
+ 
 
-	/* Measure - prefered line lenghth   */
-	--measure: 190ch;
+  /* Measure - prefered line lenghth   */
+  --measure: 190ch;
 } /*   End Root!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 /* Universal Selctor */
 * {
-	/* Colours */
-	--clr-accent-100: hsl(48, 100%, 50%); /* #FFCD00*/
-	--clr-accent-200: hsl(116, 49%, 40%); /* #49a942 */
-	--clr-accent-300: hsl(14, 100%, 57%); /*#ff5722 */
+  /* Colours */
+  --clr-accent-100: hsl(36, 100%, 86%); /* #ffe2b6*/
+  --clr-accent-200: hsl(77, 50%, 42%); /* #83a136 */
+  --clr-accent-300: hsl(329, 60%, 38%); /* #9c2763 */
 
-	--clr-primary-400: hsl(148, 100%, 26%); /* #00843D */
-	--clr-primary-500: hsl(199, 92%, 85%); /* #b3e5fc */
+  --clr-primary-400: hsl(77, 50%, 42%); /* #83a136 */
+  --clr-primary-500: hsl(36, 100%, 86%); /* #ffe2b6 */
 
-	--clr-neutral-100: hsl(45,29%,97%); /* #FAF9F6 */
-	--clr-neutral-900: hsl(200,30%,8%); /* #0E161A */
+  --clr-neutral-100: hsl(45, 29%, 97%); /* #FAF9F6 */
+  --clr-neutral-900: hsl(200, 30%, 8%); /* #0E161A */
 
-	/* Font Family */
-	/* featured font family  semi-bold(600) only */
-	font-family: 'Roboto', sans-serif;
-	--ff-featured: 'Roboto', sans-serif;
+  /* Font Family */
+  /* featured font family  semi-bold(600) only */
+  font-family: "Roboto", sans-serif;
+  --ff-featured: "Roboto", sans-serif;
 }
 /* Fonts */
 
